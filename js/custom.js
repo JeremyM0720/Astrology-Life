@@ -104,7 +104,21 @@ $(document).on('click', '.btn-expand', function() {
 	$(this).closest('tr').toggleClass('active');
 });
 
-/* Email Toggle */
+$('.clock-alt').hover(function() {
+	$(this).trigger('click');
+});
+
+/*** Email Row ***/
+$(document).on('click', '.campaign-email', function() {
+	var goTo = $(this).attr('link');
+	window.location.href = goTo;
+});
+
+$(document).on('click', '.campaign-email td > *', function() { 
+	alert('child');
+	return false;
+});
+
 $('.btn-toggle').click(function() {
 	$(this).toggleClass('btn-toggle-off');
 	$(this).closest('.campaign-email').toggleClass('inactive');
@@ -153,14 +167,6 @@ $(document).on('click', '.popup-close', function() {
 	return false;
 });
 
-// NAY
-
-//$(".has-popup .popup.prevent-parent").click(function(e) {
-$(document).on('click', '.has-popup .popup.prevent-parent', function(e) {
-    e.stopPropagation(); //Prevent trigerring parent
-});
-
-// Frankie was here
-
+//GIT
 }); //Custom.js END
 

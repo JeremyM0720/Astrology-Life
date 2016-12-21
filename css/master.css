@@ -247,30 +247,55 @@ table {
     }
 
 /* Dropdown LI */
+.current-menu-item {
+    background-color: #fff;
+}
+
 .nav-sub-pages > li.has-active {
     cursor: pointer;
-}
-
-.nav-sub-pages > li.has-active:after {
-    position: absolute;
-    top: 9px;
-    right: 8px;
-    content: "\f0da";
-    font-family: FontAwesome;
-}
-
-.nav-sub-pages > li.has-active.active:after { 
-    content: "\f0d7";
+    overflow: hidden;
 }
 
 .nav-sub-pages > li.has-active > a {
     max-width: 117px;
     margin-left: 0;
+    float: left;
+    width: calc(100% - 23px);
+    transition: .3s;
+}
+
+.nav-sub-pages > li.has-active > a:hover,
+.nav-sub-pages > li.has-active > .btn-sub-menu-dropdown:hover { 
+-webkit-box-shadow: inset 0px 0px 23px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 23px -13px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 23px -13px rgba(0,0,0,0.75);
+}
+
+.btn-sub-menu-dropdown {
+    padding: 9px 0;
+    text-align: center;
+    transition: .3s;
+}
+
+.nav-sub-pages > li.has-active > .btn-sub-menu-dropdown {
+    float: left;
+    width: 23px;
+}
+
+li.has-active > .btn-sub-menu-dropdown:before {
+    content: "\f0da";
+    font-family: FontAwesome;
+}
+
+li.has-active.active > .btn-sub-menu-dropdown:before{ 
+    content: "\f0d7";
+    font-family: FontAwesome;
 }
 
 /* Dropdown sub ULs */
 .nav-sub-pages ul {
     background-color: #f0f0f0;
+    clear: both;
 }
 
 .nav-sub-pages ul a { 

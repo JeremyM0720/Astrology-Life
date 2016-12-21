@@ -11,6 +11,10 @@
 /*-----------------------------------------------------------------------------------------------------------
 # @General/Base
 -----------------------------------------------------------------------------------------------------------*/
+body {
+    overflow-y: hidden;
+}
+
 input[type="text"] {
     border-radius: 5px;
     padding: .25em;
@@ -303,26 +307,39 @@ input.delete-confirmation {
     height: 110px;
     width: 100%;
     background-color: #fff;
+
+    /* For this page to avoid conflict with the email preview being cut by the overflow auto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 190px;
+    width: calc(100% - 190px);
+    z-index: 99;
 } 
 
 /*** Fixed Header ***/
 #ticketing-page #main-content.fixed-header > #content-body {
-    height: calc(100% - 130px); /* #content-header height plus 20 */
+    height: 100%; /* #content-header height plus 20 */
     overflow: auto;   
 }
 
 /* Adjustment for this particular page, to avoid conflict with the email preview being cut by the overflow auto */
 #main-content {
     width: 100%;
+    position: relative;
 }
 
-#content-header,
 #content-body {
     padding-left: 190px;
+    padding-top: 110px;
 }
 
 #campaigns {
-    
+    padding-top: 110px;
+}
+
+#main-sidebar {
+    z-index: 100;
 }
 /* EO Adjustment for this particular page, to avoid conflict with the email preview being cut by the overflow auto */
 
@@ -417,7 +434,7 @@ input.delete-confirmation {
 # @Campaign
 ----------------------------------*/
 #campaigns {
-    padding: 15px 40px 0 20px;
+    padding: 15px 20px 0;
     /*overflow: auto;
     height: 100%;*/
 }
@@ -462,13 +479,13 @@ td[colspan="3"] {
 
 /* Per Columns/Cells */
 .cell-expand {
-    width: 3%;
+    width: 4%;
     text-align: center;
     cursor: pointer;
 }
 
 .cell-info {
-    width: 42%;
+    width: 41%;
     padding-left: 0;
 }
     .cell-info span {
@@ -500,6 +517,13 @@ td[colspan="3"] {
         font-size: 75%;
         color: #939191;
         font-weight: bold;
+    }
+    .cell .btn:not(.no-hover):hover,
+    form button:hover {
+        border-color: #009dd1;
+        -webkit-box-shadow: 5px 5px 15px 0px rgba(218,218,218,.75);
+        -moz-box-shadow: 5px 5px 15px 0px rgba(218,218,218,.75);
+        box-shadow: 5px 5px 15px 0px rgba(218,218,218,.75);
     }
     .cell .btn * {
         vertical-align: middle;
@@ -546,12 +570,56 @@ td[colspan="3"] {
         }
 
     .btn-schedule .clock-alt,
-    .btn-schedule:hover img:not(.clock-alt) {
+    .btn-schedule.btn-schedule-override img:not(.clock-alt) {
         display: none;
     }
-    .btn-schedule:hover .clock-alt  {
+    .btn-schedule.btn-schedule-override .clock-alt  {
         display: inline-block;
     }
+
+        .popover.popover-schedule {
+            color: #000;
+            border-color: #24a5da;  
+        }
+        .popover-schedule .popover-content {
+            padding: 6px 20px;
+        }
+        .popover.popover-bottom::before, .popover.bs-tether-element-attached-top::before {
+ 
+        }
+
+        .popover.popover-bottom::after, .popover.bs-tether-element-attached-top::after {
+            border-bottom-color: rgb(0, 156, 210);
+        }
+
+
+        .schedule-popup {
+            position: absolute;
+            border: 1px solid #24a5da;
+            border-radius: 5px;
+            color: #000;
+            background-color: #fff;
+            padding: 7px 0;
+            width: 170px;
+            z-index: 1;
+            top: 27px;
+            left: -50px;
+        }
+        .schedule-popup:before {
+            content: "";
+            display: block;
+
+            position: absolute;
+            top: -6px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid #24a4d8;
+        }
 
     .tooltip-btn-schedule {
         position: absolute;
@@ -656,6 +724,23 @@ td[colspan="3"] {
     .main-campaign-email .sub-table {
         width: calc(100% - 66px); /* 13px on each side */
     }
+
+/* Campaign Email */
+.campaign-email {
+    cursor: pointer;
+}
+.campaign-email td > * {
+    cursor: default;
+}
+
+.campaign-email .cell-info span {
+    display: inline;
+}
+.campaign-email .cell-info span:after { 
+    /* Inline Line Break */
+     content: "\A";
+     white-space: pre; 
+}
 
 /* Row Links */
 #campaigns table {
@@ -785,7 +870,7 @@ td[colspan="3"] {
 }
 
 .active ~ .row-hidden {
-    transition: all .4s, opacity .8s;
+    transition: all .4s, opacity .3s;
     opacity: 1;
     left: auto;
     position: relative;
