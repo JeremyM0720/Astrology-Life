@@ -153,6 +153,8 @@ $(document).on('click', '.popup-close', function() {
 	return false;
 });
 
+// NAY
+
 //$(".has-popup .popup.prevent-parent").click(function(e) {
 $(document).on('click', '.has-popup .popup.prevent-parent', function(e) {
     e.stopPropagation(); //Prevent trigerring parent
