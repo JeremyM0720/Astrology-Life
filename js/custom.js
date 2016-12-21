@@ -158,9 +158,5 @@ $(document).on('click', '.has-popup .popup.prevent-parent', function(e) {
     e.stopPropagation(); //Prevent trigerring parent
 });
 
-$(document).click(function() {
-	alert("YEA");
-});
-
 }); //Custom.js END
 
