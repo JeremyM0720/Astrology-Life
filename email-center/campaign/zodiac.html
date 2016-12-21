@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Astrology Life</title>
+	<style>@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');</style>
+	<link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pre-defined.css">
+	<link rel="stylesheet" type="text/css" href="../../css/master.css">
+	<!--- Module CSS  -->
+	<link rel="stylesheet" type="text/css" href="../../css/email-center.css">
+</head>
+<body id="ticketing-page">
+
+	<div id="site-wrapper">
+
+		<aside id="main-sidebar" class="clearfix">
+			<div class="logo header-same-height">
+				<img src="../../img/company-logo.png" alt="Astrology Life">
+				<p class="page-title mb-0">Email Center</p>
+			</div>
+
+			<!--- Nav Pages -->
+			<ul class="nav-vertical nav-pages">
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-stats.png">
+						<span>Stats</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-content.png">
+						<span>Content</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="#">
+						<img src="../../img/icons/icon-menu-email-alt.png">
+						<span>Email</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-ticket.png">
+						<span>Tickets</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-staff.png">
+						<span>Staff</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-members.png">
+						<span>Members</span>
+					</a>
+				</li>
+			</ul>
+
+			<!--- Bottom Menu-->
+			<ul class="nav-vertical nav-pages bottom-menu">
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-settings.png">
+						<span>Settings</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-logout.png">
+						<span>Log Out</span>
+					</a>
+				</li>
+			</ul>
+
+			<!--- Sub Pages -->
+			<ul class="nav-vertical nav-sub-pages">
+				<li class="active has-active">
+					<a href="../campaign.html">Campaigns</a>
+					<ul>
+						<li><a href="life-map.html">Life Map</a></li>
+						<li><a href="life-forecast.html">Life Forecast</a></li>
+						<li><a href="life-in-numbers.html">Life in Numbers</a></li>
+						<li class="active"><a href="zodiac.html">Zodiac</a></li>
+						<li><a href="daily-horoscope.html">Daily Horoscope</a></li>
+					</ul>
+				</li>
+				<li class="has-active">
+					<a href="customer-service.html">Customer Flows</a>
+					<ul>
+						<li><a href="#">Customer Flow #1</a></li>
+						<li><a href="#">Customer Flow #2</a></li>
+					</ul>
+				</li>
+				<li><a href="experts.html">Lists</a></li>
+			</ul>
+		</aside> <!--- /#main-sidebar -->
+		<!--- EO Side Bar -->
+
+		<!--- Start Of Right Side - Main Content -->
+				<div id="main-content" class="fixed-header">
+
+					<!--- Start Of Header -->
+					<header id="content-header" class="clearfix">
+						<div class="top-header clearfix plx-20 pr-huge header-same-height">
+							<div class="breadcrumbs mt-1 smaller">
+								<span><a href="#">Email Center</a></span>
+								<span class="breadcrumbs-divider">/</span>
+								<span class="current-page">Campaigns</span>
+							</div>
+						</div>
+
+						<div class="top-info pr-huge">
+							<div class="br-gray bb-gray">
+								<div class="row-mb ptx-10 pxx-20 prx-40">
+									<div class="left w-50">
+										<span class="smaller clr-gray">Sort by:</span>
+										<div class="sort-by">
+											<i class="fa fa-chevron-down"></i>
+											<select class="form-control h-25">
+												<option selected>Campaign ID #</option>
+												<option>Campaign ID #</option>
+												<option>Campaign ID #</option>
+											</select>
+										</div>
+									</div>
+
+									<div id="action-campaign" class="right w-50 align-right">
+										<a href="#" class="btn btn-action active">Edit Order</a>
+										<div href="#" class="btn btn-action btn-action-blue inactive has-popup create-campaign">
+											New Campaign
+											<!--- popup -->
+											<div class="popup popup-create-campaign prevent-parent">
+												<p class="smaller new-campaign-id">Campaign #6</p>
+												<p class="bold normal-size">New Campaign</p>
+												<input type="text" class="new-campaign-name">
+												<p class="align-center option-buttons new-campaign-buttons"><button class="option-1 popup-close">Cancel</button> <button class="option-2 btn-blue">Save</button></p>
+											</div>
+										</div>
+									</div>
+								</div> <!--- /.row-mb -->
+							</div> <!--- /.bb-gray .br-gray -->
+						</div> <!--- /#top-info -->
+					</header><!--- /#content-header -->
+					<!--- EO Header -->
+
+					<!--- Start Of Body (Body Page) -->
+					<div id="content-body">
+							<!--- START OF List of open tickets .. bookmark-->
+							<div id="campaigns" class="campaign-list overflow-check h-100">
+								<div class="campaign">
+									<table>
+										<tr class="row-campaign">
+											<td class="cell cell-expand btn-expand">
+												<img src="../../img/icons/icon-plus.png" class="icon-expand">
+																				<img src="../../img/icons/icon-minus.png" class="icon-collapse">
+											</td> <!--- /.cell-expand btn-expand -->
+
+											<td class="cell cell-info">
+												<span class="campaign-id">Campaign #1</span>
+												<span class="campaign-name">Life Map</span>
+												<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+											</td> <!--- /.cell-info -->
+
+											<td class="cell cell-buttons">
+												<div class="btn btn-no-fill btn-more has-popup">
+													<!--- Don't put space between the two elements below -->
+													<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+													<!--- popup -->
+													<div class="popup popup-more">
+														<a href="#">Duplicate</a>
+														<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+													</div>
+												</div>
+												<a href="#" class="btn btn-no-fill btn-schedule">
+													<!--- Don't put space between the two elements below -->
+													<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+												</a>
+												<a href="#" class="btn btn-no-fill btn-new-email"><span>New Email</span></a>
+												<div href="#" class="btn btn-no-fill btn-new-sub has-popup create-campaign">
+													New Sub-Campaign
+													<!--- popup -->
+													<div class="popup popup-create-campaign prevent-parent">
+														<p class="smaller new-campaign-id">Campaign #6</p>
+														<p class="bold normal-size">New Campaign</p>
+														<input type="text" class="new-campaign-name">
+														<p class="align-center option-buttons new-campaign-buttons"><button class="option-1 popup-close">Cancel</button> <button class="option-2 btn-blue">Save</button></p>
+													</div>
+												</div>
+												<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+											</td> <!--- /.cell-buttons -->
+										</tr> <!--- /.tbl-row - 1 -->
+
+										<!--- Row - Sub Campaign List -->
+										<tr class="row-sub-campaign-list row-hidden">
+											<td colspan="3">
+												<!--- Sub Campaign -->
+												<div class="sub-campaign sub-table">
+													<table>
+														<tr class="row-sub-campaign">
+															<td class="cell cell-expand btn-expand">
+																<img src="../../img/icons/icon-plus.png" class="icon-expand">
+																<img src="../../img/icons/icon-minus.png" class="icon-collapse">
+															</td> <!--- /.cell-expand btn-expand -->
+
+															<td class="cell cell-info">
+																<span class="campaign-id">Sub-Campaign #1</span>
+																<span class="campaign-name">Promos (2)</span>
+																<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+															</td> <!--- /.cell-info -->
+
+															<td class="cell cell-buttons">
+																<div class="btn btn-no-fill btn-more has-popup">
+																	<!--- Don't put space between the two elements below -->
+																	<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																	<!--- popup -->
+																	<div class="popup popup-more">
+																		<a href="#">Duplicate</a>
+																		<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																	</div>
+																</div>
+																<a href="#" class="btn btn-no-fill btn-schedule">
+																	<!--- Don't put space between the two elements below -->
+																	<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																</a>
+																<a href="#" class="btn btn-no-fill btn-test-all">Test All</a>
+																<a href="#" class="btn btn-no-fill btn-new-email"><span>New Email</span></a>
+															</td> <!--- /.cell-buttons -->
+														</tr>
+
+														<!--- Row - Sub Campaign Email List -->
+														<tr class="row-sub-campaign-email email row-hidden">
+															<td colspan="3">
+																<div class="sub-table campaign-email email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Email #1</span>
+																				<span class="campaign-name">Welcome to Astrology Life!</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- row-sub-campaign-email email -->
+
+																<div class="sub-table campaign-email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Email #2</span>
+																				<span class="campaign-name">Know Thyself</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- row-sub-campaign-email email -->
+															</td>
+														</tr>
+													</table>
+												</div> <!--- Sub Campaign -->
+
+												<!--- Sub Campaign -->
+												<div class="sub-campaign sub-table">
+													<table>
+														<tr class="row-sub-campaign">
+															<td class="cell cell-expand btn-expand">
+																<img src="../../img/icons/icon-plus.png" class="icon-expand">
+																				<img src="../../img/icons/icon-minus.png" class="icon-collapse">
+															</td> <!--- /.cell-expand btn-expand -->
+
+															<td class="cell cell-info">
+																<span class="campaign-id">Sub-Campaign #2</span>
+																<span class="campaign-name">Updates (4)</span>
+																<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+															</td> <!--- /.cell-info -->
+
+															<td class="cell cell-buttons">
+																<div class="btn btn-no-fill btn-more has-popup">
+																	<!--- Don't put space between the two elements below -->
+																	<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																	<!--- popup -->
+																	<div class="popup popup-more">
+																		<a href="#">Duplicate</a>
+																		<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																	</div>
+																</div>
+																<a href="#" class="btn btn-no-fill btn-schedule">
+																	<!--- Don't put space between the two elements below -->
+																	<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																</a>
+																<a href="#" class="btn btn-no-fill btn-test-all">Test All</a>
+																<a href="#" class="btn btn-no-fill btn-new-email"><span>New Email</span></a>
+															</td> <!--- /.cell-buttons -->
+														</tr>
+
+														<!--- Row - Sub Campaign Email List -->
+														<tr class="row-sub-campaign-email email row-hidden">
+															<td colspan="3">
+																<div class="sub-table campaign-email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Campaign #1</span>
+																				<span class="campaign-name">Life Map</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- row-sub-campaign-email email -->
+
+																<div class="sub-table campaign-email email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Campaign #1</span>
+																				<span class="campaign-name">Life Map</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- sub-campaign-email email -->
+
+																<div class="sub-table campaign-email email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Campaign #1</span>
+																				<span class="campaign-name">Life Map</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- sub-campaign-email email -->
+
+																<div class="sub-table campaign-email email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Campaign #1</span>
+																				<span class="campaign-name">Life Map</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- sub-campaign-email email -->
+															</td>
+														</tr>
+													</table>
+												</div> <!--- Sub Campaign -->
+
+											</td> <!--- colspan 3 -->
+										</tr> <!--- Sub Campaign Row  -->
+									</table>
+								</div> <!--- /.campaign -->
+
+
+								<div class="campaign">
+									<table>
+										<tr class="row-campaign">
+											<td class="cell cell-expand btn-expand">
+												<img src="../../img/icons/icon-plus.png" class="icon-expand">
+																				<img src="../../img/icons/icon-minus.png" class="icon-collapse">
+											</td> <!--- /.cell-expand btn-expand -->
+
+											<td class="cell cell-info">
+												<span class="campaign-id">Campaign #1</span>
+												<span class="campaign-name">Life Map</span>
+												<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+											</td> <!--- /.cell-info -->
+
+											<td class="cell cell-buttons">
+												<div class="btn btn-no-fill btn-more has-popup">
+													<!--- Don't put space between the two elements below -->
+													<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+													<!--- popup -->
+													<div class="popup popup-more">
+														<a href="#">Duplicate</a>
+														<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+													</div>
+												</div>
+												<a href="#" class="btn btn-no-fill btn-schedule">
+													<!--- Don't put space between the two elements below -->
+													<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+												</a>
+												<a href="#" class="btn btn-no-fill btn-new-email"><span>New Email</span></a>
+												<div href="#" class="btn btn-no-fill btn-new-sub has-popup create-campaign">
+													New Sub-Campaign
+													<!--- popup -->
+													<div class="popup popup-create-campaign prevent-parent">
+														<p class="smaller new-campaign-id">Campaign #6</p>
+														<p class="bold normal-size">New Campaign</p>
+														<input type="text" class="new-campaign-name">
+														<p class="align-center option-buttons new-campaign-buttons"><button class="option-1 popup-close">Cancel</button> <button class="option-2 btn-blue">Save</button></p>
+													</div>
+												</div>
+												<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+											</td> <!--- /.cell-buttons -->
+										</tr> <!--- /.tbl-row - 1 -->
+
+										<!--- Row - Sub Campaign List -->
+										<tr class="row-sub-campaign-list row-hidden">
+											<td colspan="3">
+												<!--- Sub Campaign -->
+												<div class="sub-campaign sub-table">
+													<table>
+														<tr class="row-sub-campaign">
+															<td class="cell cell-expand btn-expand">
+																<img src="../../img/icons/icon-plus.png" class="icon-expand">
+																<img src="../../img/icons/icon-minus.png" class="icon-collapse">
+															</td> <!--- /.cell-expand btn-expand -->
+
+															<td class="cell cell-info">
+																<span class="campaign-id">Sub-Campaign #1</span>
+																<span class="campaign-name">Promos (2)</span>
+																<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+															</td> <!--- /.cell-info -->
+
+															<td class="cell cell-buttons">
+																<div class="btn btn-no-fill btn-more has-popup">
+																	<!--- Don't put space between the two elements below -->
+																	<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																	<!--- popup -->
+																	<div class="popup popup-more">
+																		<a href="#">Duplicate</a>
+																		<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																	</div>
+																</div>
+																<a href="#" class="btn btn-no-fill btn-schedule">
+																	<!--- Don't put space between the two elements below -->
+																	<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																</a>
+																<a href="#" class="btn btn-no-fill btn-test-all">Test All</a>
+																<a href="#" class="btn btn-no-fill btn-new-email"><span>New Email</span></a>
+															</td> <!--- /.cell-buttons -->
+														</tr>
+
+														<!--- Row - Sub Campaign Email List -->
+														<tr class="row-sub-campaign-email email row-hidden">
+															<td colspan="3">
+																<div class="sub-table campaign-email email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Email #1</span>
+																				<span class="campaign-name">Welcome to Astrology Life!</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- row-sub-campaign-email email -->
+
+																<div class="sub-table campaign-email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Email #2</span>
+																				<span class="campaign-name">Know Thyself</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- row-sub-campaign-email email -->
+															</td>
+														</tr>
+													</table>
+												</div> <!--- Sub Campaign -->
+
+												<!--- Sub Campaign -->
+												<div class="sub-campaign sub-table">
+													<table>
+														<tr class="row-sub-campaign">
+															<td class="cell cell-expand btn-expand">
+																<img src="../../img/icons/icon-plus.png" class="icon-expand">
+																				<img src="../../img/icons/icon-minus.png" class="icon-collapse">
+															</td> <!--- /.cell-expand btn-expand -->
+
+															<td class="cell cell-info">
+																<span class="campaign-id">Sub-Campaign #2</span>
+																<span class="campaign-name">Updates (4)</span>
+																<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+															</td> <!--- /.cell-info -->
+
+															<td class="cell cell-buttons">
+																<div class="btn btn-no-fill btn-more has-popup">
+																	<!--- Don't put space between the two elements below -->
+																	<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																	<!--- popup -->
+																	<div class="popup popup-more">
+																		<a href="#">Duplicate</a>
+																		<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																	</div>
+																</div>
+																<a href="#" class="btn btn-no-fill btn-schedule">
+																	<!--- Don't put space between the two elements below -->
+																	<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																</a>
+																<a href="#" class="btn btn-no-fill btn-test-all">Test All</a>
+																<a href="#" class="btn btn-no-fill btn-new-email"><span>New Email</span></a>
+															</td> <!--- /.cell-buttons -->
+														</tr>
+
+														<!--- Row - Sub Campaign Email List -->
+														<tr class="row-sub-campaign-email email row-hidden">
+															<td colspan="3">
+																<div class="sub-table campaign-email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Campaign #1</span>
+																				<span class="campaign-name">Life Map</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- row-sub-campaign-email email -->
+
+																<div class="sub-table campaign-email email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Campaign #1</span>
+																				<span class="campaign-name">Life Map</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- sub-campaign-email email -->
+
+																<div class="sub-table campaign-email email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Campaign #1</span>
+																				<span class="campaign-name">Life Map</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- sub-campaign-email email -->
+
+																<div class="sub-table campaign-email email">
+																	<table>
+																		<tr>
+																			<td class="cell cell-expand btn-expand">
+																				<img src="../../img/icons/eyecon.png" class="normal-eyecon">
+																			</td> <!--- /.cell-expand btn-expand -->
+
+																			<td class="cell cell-info">
+																				<span class="campaign-id">Campaign #1</span>
+																				<span class="campaign-name">Life Map</span>
+																				<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																			</td> <!--- /.cell-info -->
+
+																			<td class="cell cell-buttons">
+																				<a href="#" class="btn btn-toggle"></a>
+																				<div class="btn btn-no-fill btn-more has-popup">
+																					<!--- Don't put space between the two elements below -->
+																					<span class="btn-more-arrow"><img src="../../img/icons/icon-circled-arrow-down.png"></span><span>More</span>
+																					<!--- popup -->
+																					<div class="popup popup-more">
+																						<a href="#">Duplicate</a>
+																						<a href="#" data-toggle="modal" data-target="#deleteModal1">Delete</a>
+																					</div>
+																				</div>
+																				<a href="#" class="btn btn-no-fill btn-schedule">
+																					<!--- Don't put space between the two elements below -->
+																					<img src="../../img/icons/icon-clock-2.png"><span>Schedule</span>
+																				</a>
+																				<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																				<a href="#" class="btn-campaign-arrow btn-expand"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+																			</td> <!--- /.cell-buttons -->
+																		</tr>
+																	</table> 
+																</div> <!--- sub-campaign-email email -->
+															</td>
+														</tr>
+													</table>
+												</div> <!--- Sub Campaign -->
+
+											</td> <!--- colspan 3 -->
+										</tr> <!--- Sub Campaign Row  -->
+									</table>
+								</div> <!--- /.campaign -->
+							</div> <!--- /.campaign-list - #all-tickets -->
+					</div> <!--- /#content-body -->
+					<!--- EO Body (Body Page) -->
+
+				</div> <!--- /#main-content -->
+				<!--- EO Right Side - Main Content -->
+
+			</div> <!--- /#site-wrapper -->
+
+			<!--- Delete Modal 1 -->
+			<div class="modal fade delete-modal" id="deleteModal1" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+							<h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o"></i> <span class="smaller">Delete</span></h4>
+						</div>
+						<div class="modal-body">
+							<p>You are about to delete the sub-campaign <span class="delete-campaign-name bold">Life Map – Promos.</span></p>
+							<p>All four <span class="delete-email-quantity">(4)</span> associated emails will be deleted!</p>
+							<p>Are you sure? <span class="red">There is no undo!</span></p>
+							<br>
+							<p><label>Type DELETE to confirm.</label> <input type="text" class="delete-confirmation"></p>
+							<p class="align-center option-buttons delete-buttons"><button class="option-1" data-dismiss="modal">No</button> <button class="option-2">Yes</button></p>
+						</div>
+						</div>
+					</div>
+			</div> <!--- .delete-modal -->
+
+			<!--- Scripts at the bottom for performance purposes -->
+			<script src="../../js/jquery-3.1.1.min.js"></script> <!--- Jquery -->
+			<script src="../../js/tether.min.js"></script> <!--- For popovers; must come in before bootstrap.min.js -->
+		  	<script src="../../js/bootstrap.min.js"></script>
+		  	<script src="../../js/custom.js"></script>
+
+		</body>
+		</html>

@@ -1,0 +1,34 @@
+<Campaign Table>
+
+	<Campaign Row>
+		<Campaign></Campaign>
+		<Sub Campaign TR(List)>
+			<Sub Campaign></Sub Campaign>
+			<Sub Campaign Email TR(List)>
+				<Sub Campaign Emails></Sub Campaign Emails>
+			</Sub Campaign Email TR(List)>
+		</Sub Campaign TR(List)>
+	</Campaign Row>
+
+	<Campaign Row>
+		<Campaign></Campaign>
+		<Sub Campaign TR(List)>
+			<Sub Campaign></Sub Campaign>
+			<Sub Campaign Email TR(List)>
+				<Sub Campaign Emails></Sub Campaign Emails>
+			</Sub Campaign Email TR(List)>
+		</Sub Campaign TR(List)>
+	</Campaign Row>
+
+	*Without Sub Campaign
+	<Campaign Row>
+		<Campaign></Campaign>
+		<Sub Campaign Email TR(List)>
+			<Sub Campaign Emails></Sub Campaign Emails>
+		</Sub Campaign Email TR(List)>
+	</Campaign Row>
+
+</Campaign Table>
+
+
+---Maybe be a bit messy with plain HTML but will be cleaner with PHP Loops

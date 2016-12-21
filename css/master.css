@@ -1,0 +1,444 @@
+/*--------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+# @CSS For every page's header/ Template
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# @Generic Classes
+--------------------------------------------------------------*/
+html {
+    /* Used for rem unit */
+    font-size: 15px;
+}
+
+body {
+  line-height: 1.2;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  overflow: auto;
+  min-width: 800px;
+  max-width: 1900px;
+}
+
+html,
+body,
+#site-wrapper {
+    height: 100%;
+}
+
+img {
+  max-width: 100%;
+  user-drag: none; 
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+p.sm-btm {
+  margin-bottom: 5px;
+}
+
+p.med-btm {
+  margin-bottom: 18px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 1em;
+}
+
+  h2.sm-btm {
+    margin-bottom: 15px;
+  }
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+b {
+  font-weight: bold;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"],
+select {
+    height: 30px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+}
+
+/********** EO Generic Classes **********/
+
+/*--------------------------------------------------------------
+# @Left Nav and Main Content - division of left nav
+--------------------------------------------------------------*/
+.header-same-height {
+    height: 64px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#main-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 190px;
+    border-right: 1px solid #dfdfdf;
+    height: 100%;
+}
+
+#main-content {
+    width: calc(100% - 190px);
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+# @Left Nav
+--------------------------------------------------------------*/
+.logo {
+    border-bottom: 1px solid #dfdfdf;
+    text-align: center;
+}
+
+    .logo img {
+        margin-top: 3px;
+        margin-bottom: 1px;
+    }
+
+.page-title {
+    color: #a5a5a5;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*--------------------------------
+# @Main Navigation
+--------------------------------*/
+/*--- Navigation Vertical +++ ---*/
+.nav-vertical img,
+.nav-vertical a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-vertical li {
+    transition: .4s;
+}
+
+/*--- EO @Main Navigation ---*/
+
+/* nav-pages */
+.nav-pages {
+    width: 50px;
+    float: left;
+    text-align: center;
+    background-color: #dfdfdf;
+    position: relative;
+
+    min-height: 100%;
+    font-size: 9px;
+}
+
+    .nav-pages li {
+        padding: 6px;
+        color: #666;
+    }
+
+    .nav-pages li.active,
+    .nav-pages li:hover {
+        background-color: #f0f0f0;
+    }
+
+    .nav-pages li.active a {
+        color: #e93390;
+    }
+
+        .nav-pages li a span {
+            display: block;
+            padding-top: 5px;
+        }
+
+/***** nav-sub-pages *****/
+.nav-pages + .nav-sub-pages {
+    width: calc(100% - 50px);
+    float: left;
+    color: #000;
+    background-color: #f0f0f0;
+
+    min-height: 100%;
+    font-size: 11px;
+}
+
+.nav-pages + .nav-sub-pages li,
+.nav-pages + .nav-sub-pages a {
+    position: relative;
+}
+
+    .nav-sub-pages li.active,
+    .nav-sub-pages li:hover {
+        background-color: #fff;
+    }
+
+    .nav-sub-pages li.active > a,
+    .nav-sub-pages li:hover > a {
+        color: #000;
+    }
+
+    .nav-sub-pages a {
+        padding: 8px;
+        font-weight: bold;
+        color: #787878;
+        transition: .4s;
+    }
+
+/* Dropdown LI */
+.nav-sub-pages > li.has-active {
+    cursor: pointer;
+}
+
+.nav-sub-pages > li.has-active:after {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    content: "\f0da";
+    font-family: FontAwesome;
+}
+
+.nav-sub-pages > li.has-active.active:after { 
+    content: "\f0d7";
+}
+
+.nav-sub-pages > li.has-active > a {
+    max-width: 117px;
+    margin-left: 0;
+}
+
+/* Dropdown sub ULs */
+.nav-sub-pages ul {
+    background-color: #f0f0f0;
+}
+
+.nav-sub-pages ul a { 
+    padding: 5px 8px 5px 20px;
+    font-size: 10px;
+}
+
+.nav-sub-pages ul li:before {
+    content: "";
+    display: block;
+    width: 3px;
+    pointer-events: none;
+
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: .1s;
+}
+
+.nav-sub-pages ul li.active:before { 
+    background-color: #d8006f;
+}
+
+.nav-sub-pages > li > ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.nav-sub-pages > li.active > ul {
+    max-height: 200px;
+}
+
+/***** Bottom Menu *****/
+.nav-pages.bottom-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 0;  
+}
+
+/*--------------------------------------------------------------
+# @Main Content
+--------------------------------------------------------------*/
+#content-body,
+.pr-huge {
+    padding-right: 0;
+}
+
+/*--------------------
+# @For Fixed Header
+this can be done using
+jquery but is faster with
+css
+--------------------*/
+#main-content.fixed-header {
+    height: 100%;
+}
+
+#main-content.fixed-header > #content-body {
+    min-height: 100px; /* To accomodate screens lower than -> height 300px */
+}
+
+/*----------------------------------
+# @Content Header
+----------------------------------*/
+/* bread-crumbs */
+.breadcrumbs {
+    color: #919191;
+    float: left;
+    font-weight: 700;
+}
+
+    .breadcrumbs a:hover {
+        color: #a2a2a2;
+        text-decoration: underline;
+    }
+
+.current-page {
+    color: #000;
+}
+
+.search-field {
+    position: relative;
+    color: #a4a4a4;
+}
+
+    .search-box {
+        padding-left: 30px;
+        font-size: 80%;
+    }
+
+    .search-icon {
+        left: 7px;
+        top: calc(50% + 1px);
+        font-size: 16px;
+    }
+
+    .search-box::-webkit-input-placeholder {
+        font-style: italic;
+    }
+
+    .search-box:-moz-placeholder { /* Firefox 18- */
+        font-style: italic;
+    }
+
+    .search-box::-moz-placeholder {  /* Firefox 19+ */
+        font-style: italic;
+    }
+
+    .search-box:-ms-input-placeholder {  
+        font-style: italic;
+    }
+
+input.with-icon {
+    height: 30px;
+}
+
+.top-header {
+    border-right: 1px solid #c0bebe;
+    border-bottom: 1px solid #c0bebe;
+    position: relative;
+    background-color: #fff;
+}
+
+/*---------------------------------------------------------------------------------
+# @Responsive
+---------------------------------------------------------------------------------*/
+/*------------------------------------------------------
+# @Medium Screens = 1201 to 1600px
+------------------------------------------------------*/
+@media only screen and (min-width: 1201px) and (max-width: 1600px){
+
+	/*------------------------------------------
+	# @Reduce right padding on medium screens
+	------------------------------------------*/
+	#content-body,
+	.pr-huge {
+		padding-right: 0;
+	}
+
+}
+
+/*------------------------------------------------------
+# @Small Screens = 800px to 1200px
+------------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+	/*------------------------------------------
+	# @Make left NOT fixed to accomodate screens
+	lower than 800px (make sidescroll possible)
+	------------------------------------------*/
+
+	#main-sidebar {
+		position: absolute;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+
+	/*------------------------------------------
+	# @Remove right padding on non-large screens
+	------------------------------------------*/
+	#content-body,
+	.pr-huge {
+		padding-right: 0;
+	}
+
+}

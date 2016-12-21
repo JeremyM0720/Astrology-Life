@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Astrology Life</title>
+	<style>@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');</style>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/pre-defined.css">
+	<link rel="stylesheet" type="text/css" href="../css/master.css">
+	<!--- Module CSS  -->
+	<link rel="stylesheet" type="text/css" href="../css/ticketing.css">
+</head>
+<body id="ticketing-page">
+
+	<div id="site-wrapper">
+
+		<aside id="main-sidebar" class="clearfix">
+			<div class="logo header-same-height">
+				<img src="../img/company-logo.png" alt="Astrology Life">
+				<p class="page-title mb-0">Ticketing</p>
+			</div>
+
+			<!--- Nav Pages -->
+			<ul class="nav-vertical nav-pages">
+				<li>
+					<a href="#">
+						<img src="../img/icons/icon-menu-stats.png">
+						<span>Stats</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../img/icons/icon-menu-content.png">
+						<span>Content</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../img/icons/icon-menu-email.png">
+						<span>Email</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="#">
+						<img src="../img/icons/icon-menu-ticket.png">
+						<span>Tickets</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../img/icons/icon-menu-staff.png">
+						<span>Staff</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../img/icons/icon-menu-members.png">
+						<span>Members</span>
+					</a>
+				</li>
+			</ul>
+
+			<!--- Bottom Menu-->
+			<ul class="nav-vertical nav-pages bottom-menu">
+				<li>
+					<a href="#">
+						<img src="../img/icons/icon-menu-settings.png">
+						<span>Settings</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="../img/icons/icon-menu-logout.png">
+						<span>Log Out</span>
+					</a>
+				</li>
+			</ul>
+
+			<!--- Sub Pages -->
+			<ul class="nav-vertical nav-sub-pages">
+				<li class="active"><a href="accounting.html">Accounting</a></li>
+				<li><a href="customer-service.html">Customer Service</a></li>
+				<li><a href="experts.html">Experts</a></li>
+				<li><a href="sales.html">Sales</a></li>
+			</ul>
+		</aside> <!--- /#main-sidebar -->
+		<!--- EO Side Bar -->
+
+		<!--- Start Of Right Side - Main Content -->
+		<div id="main-content" class="fixed-header">
+
+			<!--- Start Of Header -->
+			<header id="content-header" class="clearfix">
+				<div class="top-header clearfix plx-20 pr-huge header-same-height">
+					<div class="breadcrumbs mt-1 smaller">
+						<span><a href="#">Ticketing</a></span>
+						<span class="breadcrumbs-divider">/</span>
+						<span class="current-page">Accounting</span>
+					</div>
+
+					<div class="search-field right ptx-5 prx-40">
+						<input type="text" class="form-control search-box" placeholder="Search for tickets...">
+						<i class="fa fa-search y-50 search-icon" aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<div class="top-info pr-huge">
+					<div class="br-gray bb-gray">
+						<div class="stat-boxes row-mb ptx-10 pxx-20 has-deactivate" role="tablist">
+							<div class="stat-box default-tab active" style="display: none;">
+								<a class="default-tab active" href="#all-tickets" data-toggle="tab" role="tab"></a>
+							</div>
+
+							<div class="stat-box stat-box-gray">
+								<a data-toggle="tab" href="#open-tickets" role="tab">
+									<h2 class="mb-0">59</h2>
+									<span class="smaller">Open Tickets</span>
+								</a>
+							</div>
+
+							<div class="stat-box stat-box-black">
+								<a data-toggle="tab" href="#oldest-tickets" role="tab">
+									<h2 class="mb-0">2d</h2>
+									<span class="smaller">Oldest Ticket</span>
+								</a>
+							</div>
+
+							<div class="stat-box stat-box-blue">
+								<a data-toggle="tab" href="#new-tickets" role="tab">
+									<h2 class="mb-0">59</h2>
+									<span class="smaller">New Tickets</span>
+								</a>
+							</div>
+						</div> <!--- /.row-mb -->
+
+						<div class="row-mb pxx-20 prx-40">
+							<div class="left w-50">
+								<span class="small clr-gray">View Tickets</span>
+								<select class="sort-time form-control h-25">
+									<option selected>Last 24 Hours</option>
+									<option>Last 20 Hours</option>
+									<option>Last 15 Hours</option>
+									<option>Last 10 Hours</option>
+								</select>
+							</div>
+
+							<div id="action-ticket" class="right w-50 align-right">
+								<a href="#" class="btn btn-action mr-half">Assign To</a>
+								<a href="#" class="btn btn-action mr-half">Move To</a>
+								<a href="#" class="btn btn-action">Delete</a>
+							</div>
+						</div> <!--- /.row-mb -->
+
+						<div class="ticket-module-filters ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check"></div>
+								<div class="cell cell-icon"></div>
+								<div class="cell cell-filter cell-email small">
+									<a href="#"><span>Email</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								</div>
+								<div class="cell cell-filter cell-question">
+									<a href="#"><span>Question</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								</div>
+								<div class="cell cell-filter cell-date">
+									<a href="#"><span>Date</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								</div>
+								<div class="cell cell-filter cell-updated">
+									<a href="#"><span>Updated</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								</div>
+								<div class="cell cell-filter cell-status">
+									<a href="#"><span>Status</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+					</div> <!--- /.bb-gray .br-gray -->
+				</div> <!--- /#top-info -->
+			</header><!--- /#content-header -->
+			<!--- EO Header -->
+
+			<!--- Start Of Body (Body Page) -->
+			<div id="content-body">
+				<div class="tab-content h-100">
+					<!--- START OF List of open tickets -->
+					<div id="all-tickets" class="ticket-list tab-pane fade in active" action="" role="tabpanel">
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Silver_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">hansolo@rebelalliance.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">lukesky@jedi.edu</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-green">Completed</a>
+									<a href="accounting/ticket-1234.html"><a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Female_icon_Pink_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">princessleia@hotmail.universe</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Bronze_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">darthvader@deathstarconstruction.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-blue">New</a>
+									<a href="accounting/ticket-1234.html"><a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Female_icon_Black_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">jabba@thehut.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">r2-d2@droid.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">hansolo@rebelalliance.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">hansolo@rebelalliance.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="loading my-1 align-center">
+							<a href="#" class="btn btn-loading btn-longer btn-blue">Loading...</a>
+						</div>
+					</div> <!--- /.ticket-list - #all-tickets -->
+
+
+					<!--- START OF List of open tickets -->
+					<div id="open-tickets" class="ticket-list tab-pane fade in" action="" role="tabpanel">
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Silver_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">loremipsum@sitamet.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">lukesky@jedi.edu</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Female_icon_Pink_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">princessleia@hotmail.universe</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Bronze_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">darthvader@deathstarconstruction.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Female_icon_Black_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">jabba@thehut.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">r2-d2@droid.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">hansolo@rebelalliance.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">hansolo@rebelalliance.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-gray">Open</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="loading my-1 align-center">
+							<a href="#" class="btn btn-loading btn-longer btn-blue">Loading...</a>
+						</div>
+					</div> <!--- /.ticket-list - #open-tickets -->
+
+
+					<!--- START OF List of oldest tickets -->
+					<div id="oldest-tickets" class="ticket-list tab-pane fade" role="tabpanel">
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">lukesky@jedi.edu</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-green">Completed</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Female_icon_Pink_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">princessleia@hotmail.universe</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-green">Completed</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Silver_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">hansolo@rebelalliance.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-green">Completed</a>
+									<i class="fa fa-angle-right bigger status-arrow"></i>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Bronze_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">darthvader@deathstarconstruction.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-green">Completed</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Female_icon_Black_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">jabba@thehut.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-green">Completed</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">r2-d2@droid.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-green">Completed</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="loading my-1 align-center">
+							<a href="#" class="btn btn-longer btn-blue">Loading...</a>
+						</div>
+					</div> <!--- /.ticket-list - #oldest-tickets -->
+
+
+
+					<!--- START OF List of new tickets -->
+					<div id="new-tickets" class="ticket-list tab-pane fade" role="tabpanel">
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Bronze_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">darthvader@deathstarconstruction.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-blue">New</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Silver_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">hansolo@rebelalliance.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-blue">New</a>
+									<i class="fa fa-angle-right bigger status-arrow"></i>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">lukesky@jedi.edu</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-blue">New</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Female_icon_Pink_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">princessleia@hotmail.universe</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-blue">New</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Female_icon_Black_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">jabba@thehut.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-blue">New</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="ticket-module">
+							<div class="tbl-row">
+								<div class="cell cell-check">
+									<input type="checkbox">
+									<a class="ticket-link" href="accounting/ticket-1234.html"></a>
+								</div>
+								<div class="cell cell-icon align-center"><img src="../img/icons/Male_icon_Gold_BG.jpg"></div>
+								<div class="cell cell-email">
+									<span class="email-address bold">r2-d2@droid.com</span>
+									<br>
+									<span class="ticket-code">#334B-0</span>
+								</div>
+								<div class="cell cell-question">This is the question that is being asked. I’m sure it is very insightful and such however this is just ... </div>
+								<div class="cell cell-date">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-updated">
+									<span class="date">10/21/2016</span>
+									<br>
+									<span class="time">10:41 AM</span>
+								</div>
+								<div class="cell cell-status align-center">
+									<a href="accounting/ticket-1234.html" class="btn-ticket-status btn-blue">New</a>
+									<a href="accounting/ticket-1234.html"><i class="fa fa-angle-right bigger valign-middle status-arrow"></i></a>
+								</div>
+							</div>
+						</div> <!--- /.ticket-module -->
+
+						<div class="loading my-1 align-center">
+							<a href="#" class="btn btn-longer btn-blue">Loading...</a>
+						</div>
+					</div> <!--- /.ticket-list - #new-tickets -->
+				</div> <!--- /.tab-content -->
+
+
+			</div> <!--- /#content-body -->
+			<!--- EO Body (Body Page) -->
+
+		</div> <!--- /#main-content -->
+		<!--- EO Right Side - Main Content -->
+
+	</div> <!--- /#site-wrapper -->
+
+	<!--- Scripts at the bottom for performance purposes -->
+	<script src="../js/jquery-3.1.1.min.js"></script> <!--- Jquery -->
+  	<script src="../js/bootstrap.min.js"></script>
+  	<script src="../js/custom.js"></script>
+
+</body>
+</html>

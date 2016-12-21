@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Astrology Life</title>
+	<style>@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');</style>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pre-defined.css">
+	<link rel="stylesheet" type="text/css" href="../../css/master.css">
+	<!--- Module CSS  -->
+	<link rel="stylesheet" type="text/css" href="../../css/ticketing.css">
+</head>
+<body id="customer-service-ticket">
+
+	<div id="site-wrapper">
+
+		<aside id="main-sidebar" class="clearfix">
+			<div class="logo header-same-height">
+				<img src="../../img/company-logo.png" alt="Astrology Life">
+				<p class="page-title mb-0">Ticketing</p>
+			</div>
+
+			<!--- Nav Pages -->
+			<ul class="nav-vertical nav-pages">
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-stats.png">
+						<span>Stats</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-content.png">
+						<span>Content</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-email.png">
+						<span>Email</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="#">
+						<img src="../../img/icons/icon-menu-ticket.png">
+						<span>Tickets</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-staff.png">
+						<span>Staff</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-members.png">
+						<span>Members</span>
+					</a>
+				</li>
+			</ul>
+
+			<!--- Bottom Menu-->
+			<ul class="nav-vertical nav-pages bottom-menu">
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-settings.png">
+						<span>Settings</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="../../img/icons/icon-menu-logout.png">
+						<span>Log Out</span>
+					</a>
+				</li>
+			</ul>
+
+			<!--- Sub Pages -->
+			<ul class="nav-vertical nav-sub-pages">
+				<li class="active"><a href="../accounting.html">Accounting</a></li>
+				<li><a href="../customer-service.html">Customer Service</a></li>
+				<li><a href="../experts.html">Experts</a></li>
+				<li><a href="../sales.html">Sales</a></li>
+			</ul>
+		</aside> <!--- /#main-sidebar -->
+		<!--- EO Side Bar -->
+
+		<!--- Start Of Right Side - Main Content -->
+		<div id="main-content" class="fixed-header">
+
+			<!--- Start Of Header -->
+			<header id="content-header" class="clearfix">
+				<div class="top-header clearfix plx-20 pr-huge header-same-height">
+					<div class="breadcrumbs mt-1 smaller">
+						<span><a href="#">Ticketing</a></span>
+						<span class="breadcrumbs-divider">/</span>
+						<span><a href="#">Accounting</a></span>
+						<span class="breadcrumbs-divider">/</span>
+						<span class="current-page">Ticket #1021</span>
+						<a href="#" class="btn-ticket-status btn-gray mlx-30">Open</a>
+					</div>
+
+					<div class="create-sub-ticket right mt-1 prx-40">
+						<a href="#" class="btn btn-sub-ticket btn-blue" data-toggle="modal" data-target="#myModal">Create Sub Ticket</a>
+
+						<form class="modal-form">
+							<!-- 1st Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											<h4 class="modal-title" id="myModalLabel">Create New Ticket</h4>
+										</div> <!--- /.modal-header -->
+
+										<!--- Modal Body -->
+										<div class="modal-body">
+											<div class="form-group">
+												<label for="exampleTextarea">Description</label>
+												<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+											</div> <!--- Form Group -->
+
+											<div class="form-group">
+												<label for="formGroupExampleInput">Client</label>
+												<input type="text" class="form-control" id="formGroupExampleInput">
+											</div> <!--- Form Group -->
+
+											<div class="form-group">
+												<label for="formGroupExampleInput">Department</label>
+												<input type="text" class="form-control" id="formGroupExampleInput">
+											</div> <!--- Form Group -->
+
+											<div class="form-group">
+												<label for="formGroupExampleInput">Assign To</label>
+												<input type="text" class="form-control" id="formGroupExampleInput">
+											</div> <!--- Form Group -->
+
+											<div class="form-group">
+												<label for="exampleSelect1">Priority</label>
+												<select class="form-control" id="exampleSelect1">
+													<option>High</option>
+													<option>Low</option>
+													<option>Normal</option>
+												</select>
+											</div>
+										</div>
+										<!--- Modal Body -->
+
+										<div class="modal-footer">
+											<a href="#" class="btn btn-sub-ticket btn-close" data-dismiss="modal">Close</a>
+											<a href="#" class="btn btn-sub-ticket btn-next-modal btn-blue" data-toggle="modal" data-target="#myModal2">Create Ticket</a>
+										</div> <!--- /.modal-footer -->
+									</div> <!--- /.modal-content -->
+								</div> <!--- /.modal-dialog -->
+							</div> <!--- /.modal -->
+
+							<!-- 2nd Modal -->
+							<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											<h4 class="modal-title" id="myModalLabel">Assign Ticket</h4>
+										</div> <!--- /.modal-header -->
+
+										<!--- Modal Body -->
+										<div class="modal-body">
+											<div class="form-group">
+												<label for="exampleTextarea">Description</label>
+												<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+											</div> <!--- Form Group -->
+
+											<div class="form-group">
+												<label for="formGroupExampleInput">Client</label>
+												<input type="text" class="form-control" id="formGroupExampleInput">
+											</div> <!--- Form Group -->
+
+											<div class="form-group">
+												<label for="formGroupExampleInput">Department</label>
+												<input type="text" class="form-control" id="formGroupExampleInput">
+											</div> <!--- Form Group -->
+
+											<div class="form-group">
+												<label for="formGroupExampleInput">Assign To</label>
+												<input type="text" class="form-control" id="formGroupExampleInput">
+											</div> <!--- Form Group -->
+
+											<div class="form-group">
+												<label for="exampleSelect1">Priority</label>
+												<select class="form-control" id="exampleSelect1">
+													<option>High</option>
+													<option>Low</option>
+													<option>Normal</option>
+												</select>
+											</div>
+										</div>
+										<!--- Modal Body -->
+
+										<div class="modal-footer">
+											<a href="#" class="btn btn-sub-ticket btn-close" data-dismiss="modal">Close</a>
+											<input type="submit" class="btn btn-primary btn-sub-ticket " value="Assign Ticket">
+										</div> <!--- /.modal-footer -->
+									</div> <!--- /.modal-content -->
+								</div> <!--- /.modal-dialog -->
+							</div> <!--- /.modal -->
+						</form>
+					</div>
+				</div>
+
+				<div class="top-info pr-huge">
+					<div class="br-gray bb-gray">
+						<div class="row-mb plx-20 prx-40 ptx-25 pbx-5">
+							<div class="ticket-tab left w-50">
+								<ul class="nav nav-pills" role="tablist">
+									<li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#ticket">Ticket</a></li>
+									<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#private-note">Private Note</a></li>
+								</ul>
+							</div>
+
+							<div id="action-ticket" class="right w-50 align-right">
+								<!--<a href="#" class="mr-1">High Priority</a>-->
+								<ul class="ticket-priority custom-dropdown has-active" data-active="1">
+									<li>
+										<a  class="custom-dropdown-dynamic" href="#">High Priority</a>
+										<ul>
+											<li class="active" data-value="1"><a href="#">High Priority</a></li>
+											<li data-value="2"><a href="#">Normal</a></li>
+											<li data-value="3"><a href="#">Low Priority</a></li>
+										</ul>
+									</li>
+								</ul>
+								<a href="#" class="btn btn-action active mr-half">Assign To</a>
+								<a href="#" class="btn btn-action active">Delete</a>
+							</div>
+						</div> <!--- /.row-mb -->
+					</div> <!--- /.bb-gray .br-gray -->
+				</div> <!--- /#top-info -->
+			</header><!--- /#content-header -->
+			<!--- EO Header -->
+
+			<!--- Start Of Body (Body Page) -->
+			<div id="content-body">
+				<div class="tab-content h-100">
+					<!--- START OF the Ticket (Conversation) -->
+					<div id="ticket" class="tab-pane fade in active" role="tabpanel">
+						<div class="message message-user">
+							<div class="avatar clearfix">
+								<img class="avatar-img" src="../../img/avatars/avatar-1.png">
+								<div class="user-info">
+									<h2 class="user-name">Walter Fry</h2>
+									<span class="time-sent">30 minutes ago</span>
+								</div>
+							</div>
+							
+							<div class="message-content">
+								<p>Hello Elliott,</p>
+								<p>I am asking you a question. I want to know the answer to it and I am urgently waiting your response, so hit me up dude!</p>
+							</div>
+						</div> <!-- Message -->
+						
+						<div class="message message-support">
+							<div class="avatar clearfix">
+								<img class="avatar-img" src="../../img/avatars/avatar-2.png">
+								<div class="user-info">
+									<h2 class="user-name">Elliott Strauss</h2>
+									<span class="time-sent">30 minutes ago</span>
+								</div>
+							</div>
+							
+							<div class="message-content">
+								<p>Walter, we apologize for any inconvenience</p>
+								<p>We are answering your question in an elegant and helpful fashion. we are giving you words and text and other stuff and this is a terribly written sentence for filler that also likely contains spelling and grammatical mistakes</p>
+								<p>We hope this helps!</p>
+								<p>Thanks!</p>
+							</div>
+						</div> <!-- Message -->
+
+						<div class="message message-user">
+							<div class="avatar clearfix">
+								<img class="avatar-img" src="../../img/avatars/avatar-1.png">
+								<div class="user-info">
+									<h2 class="user-name">Walter Fry</h2>
+									<span class="time-sent">30 minutes ago</span>
+								</div>
+							</div>
+							
+							<div class="message-content">
+								<p>Hello Elliott,</p>
+								<p>I am asking you a question. I want to know the answer to it and I am urgently waiting your response, so hit me up dude!</p>
+							</div>
+						</div> <!-- Message -->
+						
+						<div class="message message-support">
+							<div class="avatar clearfix">
+								<img class="avatar-img" src="../../img/avatars/avatar-2.png">
+								<div class="user-info">
+									<h2 class="user-name">Elliott Strauss</h2>
+									<span class="time-sent">30 minutes ago</span>
+								</div>
+							</div>
+							
+							<div class="message-content">
+								<p>Walter, we apologize for any inconvenience</p>
+								<p>We are answering your question in an elegant and helpful fashion. we are giving you words and text and other stuff and this is a terribly written sentence for filler that also likely contains spelling and grammatical mistakes</p>
+								<p>We hope this helps!</p>
+								<p>Thanks!</p>
+							</div>
+						</div> <!-- Message -->
+
+						<div class="message message-user">
+							<div class="avatar clearfix">
+								<img class="avatar-img" src="../../img/avatars/avatar-1.png">
+								<div class="user-info">
+									<h2 class="user-name">Walter Fry</h2>
+									<span class="time-sent">30 minutes ago</span>
+								</div>
+							</div>
+							
+							<div class="message-content">
+								<p>Hello Elliott,</p>
+								<p>I am asking you a question. I want to know the answer to it and I am urgently waiting your response, so hit me up dude!</p>
+							</div>
+						</div> <!-- Message -->
+						
+						<div class="message message-support">
+							<div class="avatar clearfix">
+								<img class="avatar-img" src="../../img/avatars/avatar-2.png">
+								<div class="user-info">
+									<h2 class="user-name">Elliott Strauss</h2>
+									<span class="time-sent">30 minutes ago</span>
+								</div>
+							</div>
+							
+							<div class="message-content">
+								<p>Walter, we apologize for any inconvenience</p>
+								<p>We are answering your question in an elegant and helpful fashion. we are giving you words and text and other stuff and this is a terribly written sentence for filler that also likely contains spelling and grammatical mistakes</p>
+								<p>We hope this helps!</p>
+								<p>Thanks!</p>
+							</div>
+						</div> <!-- Message -->
+
+						<div class="message message-response">
+							<div class="avatar clearfix">
+								<img class="avatar-img" src="../../img/avatars/avatar-1.png">
+								<div class="user-info">
+									<h2 class="user-name">Your Response</h2>
+									<span class="time-sent">Description</span>
+								</div>
+							</div>
+							
+							<div class="message-content">
+								<form>
+									<textarea class="form-control"></textarea>
+									<div class="response-option clearfix tbl w-100 mt-1">
+										<div class="tbl-row">
+											<div class="w-50 tbl-cell">
+												<input type="checkbox" id="resolved">
+												<label class="small" for="resolved">Mark this ticket as resolved</label>
+											</div>
+											<div class="w-50 tbl-cell">
+												<input type="submit" class="btn btn-primary btn-response-submit" value="Post Reply">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div> <!-- Response -->
+					</div> <!--- END OF the Ticket (Conversation) tab -->
+
+					<!--- START OF List of open tickets -->
+					<div id="private-note" class="tab-pane fade in" role="tabpanel">
+						<div class="private-note clearfix">
+							<div class="private-note-user">
+								<img class="avatar-img" src="../../img/avatars/avatar-1.png">
+								<img src="../../img/icons/icon-clock.png">
+							</div> <!--- /.private-note-user -->
+
+							<div class="private-note-info">
+								<div class="private-note-top clearfix">
+									<div class="column-2 mt-1"><span class="small valign-middle">Description</span></div>
+									<div class="column-2">
+										<div id="action-ticket" class="align-right">
+											<a href="#" class="btn btn-action bold active mr-half">Cancel</a>
+											<a href="#" class="btn btn-action bold btn-action-blue active">Save</a>
+										</div>
+									</div>
+								</div> <!--- /.private-note-info -->
+
+								<div class="private-note-details mt-1">
+									<div class="note">
+										<p class="time">11/17/2016, 3:42 AM</p>
+										<p class="description">Submitted a reply and requested additional information from client</p>
+									</div>
+
+									<div class="note">
+										<p class="time">11/16/2016, 3:42 AM</p>
+										<p class="description">Client billing info updated</p>
+									</div>
+
+									<div class="note">
+										<p class="time">11/15/2016, 3:42 AM</p>
+										<p class="description">Received original request from the client</p>
+									</div>
+								</div>  <!--- /.private-note-details -->
+							</div>
+						</div> <!--- /.private-info -->
+					</div> <!--- /#private-note .tab -->
+
+				</div> <!--- /.tab-content -->
+
+
+			</div> <!--- /#content-body -->
+			<!--- EO Body (Body Page) -->
+
+		</div> <!--- /#main-content -->
+		<!--- EO Right Side - Main Content -->
+
+	</div> <!--- /#site-wrapper -->
+
+	<!--- Scripts at the bottom for performance purposes -->
+	<script src="../../js/jquery-3.1.1.min.js"></script> <!--- Jquery -->
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,446 @@
+/*--------------------------------------------------------------
+# @Custom Pre Defined Classes
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# @CSS Reset
+--------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+  
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+/********** EO CSS Reset **********/
+
+/*----------------------------------
+# ~Typography
+----------------------------------*/
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.normal-case {
+	text-transform: none;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.fwweight-normal {
+	font-weight: normal;
+}
+
+.black,
+.current-page {
+	color: #000;
+}
+
+.clr-gray {
+  color: #939191;
+}
+
+.small {
+	font-size: 13px;
+}
+
+.smaller {
+	font-size: 11px;
+}
+
+.smallest {
+	font-size: 9px;
+}
+
+.medium {
+  font-size: 125%;
+}
+
+.big {
+	font-size: 150%;
+}
+
+.bigger {
+	font-size: 200%;
+}
+
+.biggest {
+	font-size: 250%;
+}
+
+/*--------------------------------------------------------------
+# ~LayOut
+--------------------------------------------------------------*/
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.column-2 {
+  float: left;
+  width: 50%;
+}
+
+.column-3 {
+  margin-right: 5%;
+  width: 30%;
+  float: left;
+}
+
+	.column-3:last-child {
+	  margin-right: 0;
+	}
+
+.column-4 {
+  float: left;
+  width: 25%;
+}
+
+.column-5 {
+  float: left;
+  width: calc(20% - 8px);
+  margin-right: 10px;
+}
+
+  .column-5:last-child {
+    margin-right: 0;
+  }
+
+.clearfix:after,
+.row-mb:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1024px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# ~Spacing / Width / Height
+--------------------------------------------------------------*/
+/* Spacing */
+.pl-xsm {
+  padding-left: 20px;
+}
+
+.pr-xsm {
+  padding-right: 20px;
+}
+
+.pl-sm {
+  padding-left: 20px;
+}
+
+.pr-sm {
+  padding-right: 20px;
+}
+
+.pl-med {
+  padding-left: 40px;
+}
+
+.pr-med {
+  padding-right: 40px;
+}
+
+.pl-large {
+  padding-left: 50px;
+}
+
+.pr-large {
+  padding-right: 50px;
+}
+
+/** Width / Height **/
+.w-50 {
+  width: 50% !important;
+}
+
+.w-160px {
+  width: 160px;
+}
+
+.mh-100 {
+	min-height: 100%;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+	.center-block {
+		display: block;
+		margin-right: auto !important;
+ 		margin-left: auto !important;
+	}
+
+
+.m-half {
+  margin: .5rem .5rem !important;
+}
+
+.mt-half {
+  margin-top: .5rem !important;
+}
+
+.mr-half {
+  margin-right: .5rem !important;
+}
+
+.mb-half {
+  margin-bottom: .5rem !important;
+}
+
+.ml-half {
+  margin-left: .5rem !important;
+}         
+
+
+.plx-15 {
+  padding-left: 15px;
+}
+
+.prx-15 {
+  padding-right: 15px;
+}
+
+.ptx-5 {
+  padding-top: 5px;
+}
+
+.pbx-5 {
+  padding-bottom: 5px;
+}
+
+.ptx-10 {
+  padding-top: 10px;
+}
+
+.ptx-15 {
+  padding-top: 15px;
+}
+
+.pbx-15 {
+  padding-bottom: 15px;
+}
+
+.pxx-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pyx-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.row-mb {
+  margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
+# ~Others
+--------------------------------------------------------------*/
+.br-gray {
+	border-right: 1px solid #dfdfdf;
+}
+
+.bb-gray {
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.bt-gray {
+	border-top: 1px solid #dfdfdf;
+}
+
+.bt-left {
+	border-top: 1px solid #dfdfdf;
+}
+
+.ba-gray {
+	border: 1px solid #dfdfdf;
+}
+
+.pr-med {
+  padding-right: 35px;
+}
+
+.tbl {
+  display: table;
+}
+
+.tbl-row {
+  display: table-row;
+}
+
+.tbl-cell {
+  display: table-cell;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.checkbox-checker {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 16px;
+    height: 21px;
+}
+
+.y-50 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ov-auto {
+  overflow: auto;
+}
+
+.ov-hidden {
+  overflow: hidden;
+}
+
+input.h-25,
+select.h-25 {
+  height: 25px !important;
+}
+
+.pxx-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.plx-20 {
+  padding-left: 20px;
+}
+
+.prx-20 {
+  padding-right: 20px;
+}
+
+.ptx-20 {
+  padding-top: 20px;
+}
+
+.ptx-25 {
+  padding-top: 25px;
+}
+
+.pbx-20 {
+  padding-bottom: 20px;
+}
+
+.mlx-30 {
+  margin-left: 30px;
+}
+
+.prx-40 {
+  padding-right: 40px;
+}
+
+.btn-primary {
+  background-color: #23a0d4;
+  border-color: #23a0d4;
+}
+
+.tab-pane {
+  padding: 15px;
+}
+
+/*** 
+Added on 2nd Module
+***/
+.red {
+  color: #fa0000;
+}
+
+.normal-size {
+  font-size: 15px;
+}
+
+/********** -EO Pre Defined Classes **********/
