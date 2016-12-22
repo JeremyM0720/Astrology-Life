@@ -169,14 +169,13 @@ $(document).on('click', '.popup-close', function() {
 
 /*
 **
-** Custom field edit for campaign names
+** Custom rename function for editing fields
 **
 */
 
 $(document).on('click', '.campaign-rename-icon', function() {
 	let parent = $(this).parent();
 	let value = $(this).prev().text();
-	console.log(value);
 	$(parent).hide();
 	$(parent).next().removeClass('hide');
 	$(parent).next().children('.campaign-edit').val(value);

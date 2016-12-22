@@ -500,19 +500,14 @@ td[colspan="3"] {
         font-weight: 700;
         display: inline;
     }
+    /* Display text and input fields on the same line */
     .cell-info .campaign-name-info {
         display: inline;
     }
+    /* Display text and input fields on the same line */
     .cell-info .campaign-edit-info {
         display: inline;
     }
-    .cell-info .campaign-edit-name {
-
-    }
-    .cell-info .campaign-edit-icon {
-
-    }
-
     .cell-info .campaign-date-info {
         font-size: 10px;
         color: #949799;
