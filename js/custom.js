@@ -167,6 +167,28 @@ $(document).on('click', '.popup-close', function() {
 	return false;
 });
 
-//GIT
+/*
+**
+** Custom field edit for campaign names
+**
+*/
+
+$(document).on('click', '.campaign-rename-icon', function() {
+	let parent = $(this).parent();
+	let value = $(this).prev().text();
+	console.log(value);
+	$(parent).hide();
+	$(parent).next().removeClass('hide');
+	$(parent).next().children('.campaign-edit').val(value);
+});
+
+$(document).on('click', '.campaign-save-icon', function() {
+	let parent = $(this).parent();
+	let input = $(this).prev().val();
+	let value = $(parent).prev().children('.campaign-name').text(input);
+	$(parent).addClass('hide');
+	$(parent).prev().show();
+});
+
 }); //Custom.js END
 

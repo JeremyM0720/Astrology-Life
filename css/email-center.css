@@ -498,7 +498,21 @@ td[colspan="3"] {
     .cell-info .campaign-name {
         color: #000;
         font-weight: 700;
+        display: inline;
     }
+    .cell-info .campaign-name-info {
+        display: inline;
+    }
+    .cell-info .campaign-edit-info {
+        display: inline;
+    }
+    .cell-info .campaign-edit-name {
+
+    }
+    .cell-info .campaign-edit-icon {
+
+    }
+
     .cell-info .campaign-date-info {
         font-size: 10px;
         color: #949799;
@@ -955,4 +969,12 @@ td[colspan="3"] {
     .cell .btn-more-options {
         width: 20px;
     }
+}
+
+/*------------------------------------------------------
+# Utility classes
+------------------------------------------------------*/
+
+.hide {
+    display: none !important;
 }
