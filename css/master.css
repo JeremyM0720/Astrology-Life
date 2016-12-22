@@ -256,38 +256,45 @@ table {
     overflow: hidden;
 }
 
-.nav-sub-pages > li.has-active > a {
+.sub-dropdown-options {
+    overflow: hidden;
+    padding-bottom: 2px;
+}
+
+.sub-dropdown-options > a {
     max-width: 117px;
     margin-left: 0;
     float: left;
     width: calc(100% - 23px);
-    transition: .3s;
+    transition: .1s;
+    padding-top: 10px;
 }
 
-.nav-sub-pages > li.has-active > a:hover,
-.nav-sub-pages > li.has-active > .btn-sub-menu-dropdown:hover { 
--webkit-box-shadow: inset 0px 0px 23px -13px rgba(0,0,0,0.75);
--moz-box-shadow: inset 0px 0px 23px -13px rgba(0,0,0,0.75);
-box-shadow: inset 0px 0px 23px -13px rgba(0,0,0,0.75);
-}
 
-.btn-sub-menu-dropdown {
-    padding: 9px 0;
+.sub-dropdown-options .btn-sub-menu-dropdown {
+    padding: 11px 0 9px;
     text-align: center;
-    transition: .3s;
-}
-
-.nav-sub-pages > li.has-active > .btn-sub-menu-dropdown {
+    transition: .1s;
     float: left;
     width: 23px;
 }
 
-li.has-active > .btn-sub-menu-dropdown:before {
+.sub-dropdown-options a:hover,
+.sub-dropdown-options .btn-sub-menu-dropdown:hover { 
+/*-webkit-box-shadow: inset 0px 0px 21px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 21px -13px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 21px -13px rgba(0,0,0,0.75);*/
+-webkit-box-shadow: 0px 0px 6px -1px rgba(93, 93, 93, 0.75);
+-moz-box-shadow: 0px 0px 6px -1px rgba(93, 93, 93, 0.75);
+box-shadow: 0px 0px 6px -1px rgba(93, 93, 93, 0.75);
+}
+
+li.has-active > div > .btn-sub-menu-dropdown:before {
     content: "\f0da";
     font-family: FontAwesome;
 }
 
-li.has-active.active > .btn-sub-menu-dropdown:before{ 
+li.has-active.active > .sub-dropdown-options > .btn-sub-menu-dropdown:before{ 
     content: "\f0d7";
     font-family: FontAwesome;
 }

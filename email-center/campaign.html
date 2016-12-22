@@ -80,8 +80,10 @@
 			<!--- Sub Pages -->
 			<ul class="nav-vertical nav-sub-pages">
 				<li class="active current-menu-item has-active">
-					<a href="campaign.html">Campaigns</a>
-					<i class="fa btn-sub-menu-dropdown"></i>
+					<div class="sub-dropdown-options">
+						<a href="campaign.html">Campaigns</a>
+						<i class="fa btn-sub-menu-dropdown"></i>
+					</div>
 					<ul>
 						<li><a href="campaign/life-map.html">Life Map</a></li>
 						<li><a href="campaign/life-forecast.html">Life Forecast</a></li>
@@ -91,8 +93,10 @@
 					</ul>
 				</li>
 				<li class="has-active">
-					<a href="customer-service.html">Customer Flows</a>
-					<i class="fa btn-sub-menu-dropdown"></i>
+					<div class="sub-dropdown-options">
+						<a href="campaign.html">Campaigns</a>
+						<i class="fa btn-sub-menu-dropdown"></i>
+					</div>
 					<ul>
 						<li><a href="#">Customer Flow #1</a></li>
 						<li><a href="#">Customer Flow #2</a></li>
@@ -156,7 +160,7 @@
 			<div id="content-body">
 					<!--- START OF List of open tickets .. bookmark-->
 					<div id="campaigns" class="campaign-list overflow-check h-100">
-						<div class="campaign">
+						<div class="campaign has-subcampaign">
 							<table>
 								<tr class="row-campaign">
 									<td class="cell cell-expand btn-expand">
@@ -166,7 +170,17 @@
 
 									<td class="cell cell-info">
 										<span class="campaign-id">Campaign #1</span>
-										<span class="campaign-name">Life Map</span>
+										<!-- Use this template when adding rename function -->
+										<div class="campaign-name-info">
+											<span class="campaign-name">Life Map</span>
+											<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+										</div>
+										<div class="campaign-edit-info hide">
+											<input type="text" class="campaign-edit">
+											<!-- NOTE: Replace with a save/check icon, as required -->
+											<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+										</div>
+										<!-- end rename function -->
 										<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 									</td> <!--- /.cell-info -->
 
@@ -218,7 +232,17 @@
 
 													<td class="cell cell-info">
 														<span class="campaign-id">Sub-Campaign #1</span>
-														<span class="campaign-name">Promos (2)</span>
+														<!-- Use this template when adding rename function -->
+														<div class="campaign-name-info">
+															<span class="campaign-name">Promos</span> <span class="email-count">(2)</span>
+															<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+														</div>
+														<div class="campaign-edit-info hide">
+															<input type="text" class="campaign-edit">
+															<!-- NOTE: Replace with a save/check icon, as required -->
+															<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+														</div>
+														<!-- end rename function -->
 														<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 													</td> <!--- /.cell-info -->
 
@@ -262,7 +286,17 @@
 
 																	<td class="cell cell-info">
 																		<span class="campaign-id">Email #1</span>
-																		<span class="campaign-name">Welcome to Astrology Life!</span>
+																		<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Welcome to Astrology Life</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 																		<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																		<a href="email-edit-screen.html" class="row-link"></a>
 																	</td> <!--- /.cell-info -->
@@ -283,7 +317,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -307,7 +341,17 @@
 
 																	<td class="cell cell-info">
 																		<span class="campaign-id">Email #2</span>
-																		<span class="campaign-name">Know Thyself</span>
+																		<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Know Thyself</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 																		<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																		<a href="email-edit-screen.html" class="row-link"></a>
 																	</td> <!--- /.cell-info -->
@@ -328,7 +372,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -350,7 +394,17 @@
 
 													<td class="cell cell-info">
 														<span class="campaign-id">Sub-Campaign #2</span>
-														<span class="campaign-name">Updates (4)</span>
+														<!-- Use this template when adding rename function -->
+														<div class="campaign-name-info">
+															<span class="campaign-name">Updates</span> <span class="email-count">(4)</span>
+															<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+														</div>
+														<div class="campaign-edit-info hide">
+															<input type="text" class="campaign-edit">
+															<!-- NOTE: Replace with a save/check icon, as required -->
+															<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+														</div>
+														<!-- end rename function -->
 														<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 													</td> <!--- /.cell-info -->
 
@@ -394,7 +448,17 @@
 
 																	<td class="cell cell-info">
 																		<span class="campaign-id">Campaign #1</span>
-																		<span class="campaign-name">Life Map</span>
+																		<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Life Map</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 																		<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																		<a href="email-edit-screen.html" class="row-link"></a>
 																	</td> <!--- /.cell-info -->
@@ -415,7 +479,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -439,7 +503,17 @@
 
 																	<td class="cell cell-info">
 																		<span class="campaign-id">Campaign #1</span>
-																		<span class="campaign-name">Life Map</span>
+																		<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Life Map</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 																		<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																		<a href="email-edit-screen.html" class="row-link"></a>
 																	</td> <!--- /.cell-info -->
@@ -460,7 +534,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -484,7 +558,17 @@
 
 																	<td class="cell cell-info">
 																		<span class="campaign-id">Campaign #1</span>
-																		<span class="campaign-name">Life Map</span>
+																		<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Life Map</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 																		<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																		<a href="email-edit-screen.html" class="row-link"></a>
 																	</td> <!--- /.cell-info -->
@@ -505,7 +589,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -529,7 +613,17 @@
 
 																	<td class="cell cell-info">
 																		<span class="campaign-id">Campaign #1</span>
-																		<span class="campaign-name">Life Map</span>
+																		<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Life Map</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 																		<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																		<a href="email-edit-screen.html" class="row-link"></a>
 																	</td> <!--- /.cell-info -->
@@ -550,7 +644,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -567,7 +661,7 @@
 						</div> <!--- /.campaign -->
 
 
-						<div class="campaign">
+						<div class="campaign has-subcampaign">
 							<table>
 								<tr class="row-campaign">
 									<td class="cell cell-expand btn-expand">
@@ -577,7 +671,17 @@
 
 									<td class="cell cell-info">
 										<span class="campaign-id">Campaign #1</span>
-										<span class="campaign-name">Life Map</span>
+										<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Life Map</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 										<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 									</td> <!--- /.cell-info -->
 
@@ -630,7 +734,7 @@
 														<!-- rename function -->
 														<!-- Use this template when adding rename function -->
 														<div class="campaign-name-info">
-															<span class="campaign-name">Promos (2)</span>
+															<span class="campaign-name">Promos</span> <span class="email-count">(2)</span>
 															<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
 														</div>
 														<div class="campaign-edit-info hide">
@@ -703,7 +807,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -748,7 +852,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -770,7 +874,17 @@
 
 													<td class="cell cell-info">
 														<span class="campaign-id">Sub-Campaign #2</span>
-														<span class="campaign-name">Updates (4)</span>
+														<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Updates</span> <span class="email-count">(4)</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 														<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 													</td> <!--- /.cell-info -->
 
@@ -814,7 +928,18 @@
 
 																	<td class="cell cell-info">
 																		<span class="campaign-id">Campaign #1</span>
-																		<span class="campaign-name">Life Map</span>
+																		<!-- rename function -->
+																		<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Promos</span> <span class="email-count">(2)</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 																		<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																		<a href="email-edit-screen.html" class="row-link"></a>
 																	</td> <!--- /.cell-info -->
@@ -835,7 +960,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -859,8 +984,18 @@
 
 																	<td class="cell cell-info">
 																		<span class="campaign-id">Campaign #1</span>
-																		<span class="campaign-name">Life Map</span>
-																		<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																		<!-- rename function -->
+																		<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Life Map</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->											<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																		<a href="email-edit-screen.html" class="row-link"></a>
 																	</td> <!--- /.cell-info -->
 
@@ -880,7 +1015,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -904,8 +1039,18 @@
 
 																	<td class="cell cell-info">
 																		<span class="campaign-id">Campaign #1</span>
-																		<span class="campaign-name">Life Map</span>
-																		<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
+																		<!-- rename function -->
+																		<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Life Map</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->											<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																		<a href="email-edit-screen.html" class="row-link"></a>
 																	</td> <!--- /.cell-info -->
 
@@ -925,7 +1070,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -949,7 +1094,17 @@
 
 																	<td class="cell cell-info">
 																		<span class="campaign-id">Campaign #1</span>
-																		<span class="campaign-name">Life Map</span>
+																		<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Life Map</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 																		<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																		<a href="email-edit-screen.html" class="row-link"></a>
 																	</td> <!--- /.cell-info -->
@@ -970,7 +1125,7 @@
 																			<!--- Don't put space between the two elements below -->
 																			<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																		</a>
-																		<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																		<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																		<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																	</td> <!--- /.cell-buttons -->
 																</tr>
@@ -988,7 +1143,7 @@
 
 
 
-						<div class="campaign">
+						<div class="campaign no-subcampaign">
 							<table>
 								<tr class="row-campaign">
 									<td class="cell cell-expand btn-expand">
@@ -998,7 +1153,17 @@
 
 									<td class="cell cell-info">
 										<span class="campaign-id">Campaign #1</span>
-										<span class="campaign-name">Life Map</span>
+										<!-- Use this template when adding rename function -->
+										<div class="campaign-name-info">
+											<span class="campaign-name">Life Map</span>
+											<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+										</div>
+										<div class="campaign-edit-info hide">
+											<input type="text" class="campaign-edit">
+											<!-- NOTE: Replace with a save/check icon, as required -->
+											<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+										</div>
+										<!-- end rename function -->
 										<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 									</td> <!--- /.cell-info -->
 
@@ -1059,7 +1224,17 @@
 
 																<td class="cell cell-info">
 																	<span class="campaign-id">Email #1</span>
-																	<span class="campaign-name">Welcome to Astrology Life!</span>
+																	<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Life Map</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 																	<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																	<a href="email-edit-screen.html" class="row-link"></a>
 																</td> <!--- /.cell-info -->
@@ -1080,7 +1255,7 @@
 																		<!--- Don't put space between the two elements below -->
 																		<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																	</a>
-																	<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																	<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																	<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																</td> <!--- /.cell-buttons -->
 															</tr>
@@ -1104,7 +1279,17 @@
 
 																<td class="cell cell-info">
 																	<span class="campaign-id">Email #2</span>
-																	<span class="campaign-name">Know Thyself</span>
+																	<!-- Use this template when adding rename function -->
+																		<div class="campaign-name-info">
+																			<span class="campaign-name">Life Map</span>
+																			<img class="campaign-rename-icon" src="../img/icons/icon-rename.png" />	
+																		</div>
+																		<div class="campaign-edit-info hide">
+																			<input type="text" class="campaign-edit">
+																			<!-- NOTE: Replace with a save/check icon, as required -->
+																			<img class="campaign-save-icon" src="../img/icons/icon-rename.png" />
+																		</div>
+																		<!-- end rename function -->
 																	<span class="campaign-date-info">Edited on July 31, 2016 3:15 pm by you</span>
 																	<a href="email-edit-screen.html" class="row-link"></a>
 																</td> <!--- /.cell-info -->
@@ -1125,7 +1310,7 @@
 																		<!--- Don't put space between the two elements below -->
 																		<img src="../img/icons/icon-clock-2.png"><img src="../img/icons/icon-clock-2-alt.png" class="clock-alt"><span>Schedule</span>
 																	</a>
-																	<a href="#" class="btn btn-no-fill btn-send-test">Send Test</a>
+																	<a href="#" class="btn btn-no-fill btn-send-test"><span>Send Test</span></a>
 																	<a href="#" class="btn-campaign-arrow"><i class="fa fa-angle-right bigger status-arrow"></i></a>
 																</td> <!--- /.cell-buttons -->
 															</tr>

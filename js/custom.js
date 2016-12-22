@@ -108,6 +108,24 @@ $('.clock-alt').hover(function() {
 	$(this).trigger('click');
 });
 
+/** Hover Subtable, parent no active border **/
+$('div.sub-campaign').hover(function() {
+	$(this).closest('.campaign').toggleClass('gray-border');
+	$(this).removeClass('gray-border');
+	return false;
+});
+
+$('div.campaign-email').hover(function() {
+	if ( $(this).closest('div.campaign').hasClass('has-subcampaign') ) {
+		$(this).closest('.sub-campaign').toggleClass('gray-border');
+	}
+	else {
+		$(this).closest('.campaign').toggleClass('gray-border');
+	}
+	$(this).removeClass('gray-border');
+	return false;
+});
+
 /*** Email Row ***/
 $(document).on('click', '.campaign-email', function() {
 	var goTo = $(this).attr('link');
@@ -115,7 +133,6 @@ $(document).on('click', '.campaign-email', function() {
 });
 
 $(document).on('click', '.campaign-email td > *', function() { 
-	alert('child');
 	return false;
 });
 
@@ -162,9 +179,18 @@ $(document).on('click', '.has-popup', function() {
 	$(this).toggleClass('popup-show');
 });
 
-$(document).on('click', '.popup-close', function() {
+//$(document).on('click', '.popup-close', function() {
+$('.popup-close').click(function() {
 	$(this).closest('.has-popup').removeClass('popup-show');
 	return false;
+});
+
+$(".has-popup .popup.prevent-parent").click(function(e) {
+    e.stopPropagation(); //Prevent trigerring parent
+});
+
+$('.popup-create-campaign').mouseleave(function() {
+	$(this).closest('.has-popup').removeClass('popup-show');
 });
 
 /*
@@ -173,6 +199,7 @@ $(document).on('click', '.popup-close', function() {
 **
 */
 
+/*
 $(document).on('click', '.campaign-rename-icon', function() {
 	let parent = $(this).parent();
 	let value = $(this).prev().text();
@@ -187,6 +214,35 @@ $(document).on('click', '.campaign-save-icon', function() {
 	let value = $(parent).prev().children('.campaign-name').text(input);
 	$(parent).addClass('hide');
 	$(parent).prev().show();
+});*/
+
+$(document).on('click', '.campaign-name-info', function() {
+	let parent = $(this);
+	let value = $(this).children('.campaign-name').text();
+
+	//1 Edit at a time
+	$('.campaign-edit-info:not(.hide)').prev().show();
+	$('.campaign-edit-info').addClass('hide');
+
+
+	$(this).hide();
+	$(this).next().removeClass('hide');
+	$(this).next().children('.campaign-edit').val(value);
+	$(this).next().children('.campaign-edit').focus();
+});
+
+$(document).on('click', '.campaign-save-icon', function() {
+	let parent = $(this).parent();
+	let input = $(this).prev().val();
+	let value = $(parent).prev().children('.campaign-name').text(input);
+	$(parent).addClass('hide');
+	$(parent).prev().show();
+});
+
+$('.campaign-edit').on("keypress", function(e) {
+        if (e.keyCode == 13) {
+        	$(this).siblings('.campaign-save-icon').trigger('click');
+        }
 });
 
 }); //Custom.js END

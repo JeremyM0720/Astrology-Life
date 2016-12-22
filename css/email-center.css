@@ -394,6 +394,11 @@ input.delete-confirmation {
     color: #009dd1;
     top: 6px;
     left: 10px;
+    pointer-events: none;
+}
+
+.sort-by option {
+    padding-left: 30px;
 }
 
 /* Action Buttons for tickets */
@@ -495,18 +500,73 @@ td[colspan="3"] {
         font-size: 9px;
         color: #919191;
     }
-    .cell-info .campaign-name {
+    .cell-info .campaign-name,
+    .cell-info .campaign-name + .email-count {
         color: #000;
         font-weight: 700;
         display: inline;
     }
-    /* Display text and input fields on the same line */
+
+    .campaign-name-info,
+    .campaign-edit-info {
+        display: inline-block;
+        position: relative;
+        min-width: 240px;
+        border: 1px solid transparent;
+    }
+    .campaign-name-info {
+        border-radius: 5px;
+        transition: .4s;
+        padding-right: 50px;
+    }
+    .campaign-name-info,
+    .campaign-name-info .campaign-name {
+        cursor: text;
+    }
+    .campaign-name-info:hover {
+        border-color: #999;
+    }
+    .campaign-rename-icon {
+        opacity: 0;
+        pointer-events: none;
+    }
+    /*
+    .campaign-save-icon {
+        opacity: 0 !important;
+    }
+    */
+    .campaign-rename-icon,
+    .campaign-save-icon {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 10px;
+        transition: .4s;
+    }
+    .campaign-name-info:hover .campaign-rename-icon {
+        pointer-events: auto;
+        opacity: 1;
+    }
+    input.campaign-edit {
+        height: 20px;
+        width: 100%;
+    border: 1px solid gray;
+    background-color: transparent;
+    outline: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    }
+    /* Display text and input fields on the same line 
     .cell-info .campaign-name-info {
         display: inline;
     }
-    /* Display text and input fields on the same line */
+    /* Display text and input fields on the same line
     .cell-info .campaign-edit-info {
         display: inline;
+    }
+    */
+    .campaign-name-info {
     }
     .cell-info .campaign-date-info {
         font-size: 10px;
@@ -644,11 +704,19 @@ td[colspan="3"] {
         width: 19%;
         max-width: 120px;
     }
+        div.campaign.has-subcamp .row-campaign .btn-new-email {
+            opacity: .4;
+            pointer-events: none;
+        }
     /**/
     .btn-new-sub {
         width: 31%;
         max-width: 180px;
     }
+        div.campaign.no-subcampaign .row-campaign .btn-new-sub {
+            opacity: .4;
+            pointer-events: none;
+        }
     /**/
     .btn-campaign-arrow {
         display: inline-block;
@@ -701,12 +769,19 @@ td[colspan="3"] {
 .campaign {
     display: block; 
 }
+.gray-border {
+    border-color: #c0bebe !important;
+}
 
 .sub-campaign {
     background-color: #eeeded;
 }
 .sub-campaign .sub-table {
     background-color: #fff;
+}
+
+.row-sub-campaign .btn {
+    border-color: #dcdadb;
 }
 
 .sub-table {
@@ -737,18 +812,28 @@ td[colspan="3"] {
 /* Campaign Email */
 .campaign-email {
     cursor: pointer;
+    -webkit-box-shadow: 0px 0px 13px -2px rgba(219,219,219,1);
+    -moz-box-shadow: 0px 0px 13px -2px rgba(219,219,219,1);
+    box-shadow: 0px 0px 13px -2px rgba(219,219,219,1);
 }
 .campaign-email td > * {
-    cursor: default;
+    cursor: auto;
 }
 
 .campaign-email .cell-info span {
-    display: inline;
+    display: block;
 }
-.campaign-email .cell-info span:after { 
-    /* Inline Line Break */
+ .cell-info span {
+    display: block;
+    position: relative;
+    left: 1px;
+}
+.campaign-email .cell-info span:after,
+.campaign-email .cell-info .campaign-date-info:before { 
+    /* Inline Line Break 
      content: "\A";
      white-space: pre; 
+    */
 }
 
 /* Row Links */
@@ -905,11 +990,11 @@ td[colspan="3"] {
     -------------------------------*/
     /* Make the expand button larger on smaller screens */
     .cell-expand {
-        width: 4%;
+        width: 5%;
     }
 
     .cell-info {
-        width: 37%;
+        width: 35%;
     }
 
     .cell-buttons {
@@ -919,6 +1004,7 @@ td[colspan="3"] {
     .cell .btn {
         padding-left: 4px;
         padding-right: 4px;
+        width: auto;
     }   
 
     .btn-more-options .btn-more-arrow, .btn-more-options .btn-more-arrow + span,
@@ -945,6 +1031,15 @@ td[colspan="3"] {
         width: 12px;
         height: auto;
     }
+
+    .campaign-name-info, .campaign-edit-info {
+        min-width: 180px;
+    }
+
+    .row-sub-campaign .cell-expand {
+        width: 7%;
+    }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -954,6 +1049,28 @@ td[colspan="3"] {
     .campaign {
         font-size: 12px;
     }
+
+    .cell-info {
+        width: 34%;
+    }
+
+    .cell-buttons {
+        width: 59%;
+    }
+
+    .btn.btn-toggle {
+        padding-left: 0;
+    }
+
+    .cell .btn {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .btn-schedule img {
+        width: 11px;
+    }
+
 }
 
 /*------------------------------------------------------
